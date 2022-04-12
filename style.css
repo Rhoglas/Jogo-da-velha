@@ -1,0 +1,84 @@
+@font-face {
+    font-family: placar1;
+    src: url(./fonts/FredokaOne-Regular.ttf)
+}
+
+* {
+    font-family: placar1;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to right, #FFFFFF, #EF3B36);
+}
+
+h1 {
+    padding: 10px;
+}
+
+.placar {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.stage {
+    width: 270px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 13px;
+    background: linear-gradient(315deg, #bb1414, #df1818);
+    box-shadow: -5px -5px 10px #5c0a0a, 5px 5px 10px #ff2222;
+}
+
+.square {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    background-color: #FFFFFF;
+}
+
+.o:after {
+    position: absolute;
+    content: "\1F480";
+    font-size: 50px;
+    line-height: 80px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x:after {
+    position: absolute;
+    content: "\1F5E1";
+    font-size: 50px;
+    line-height: 80px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fff;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.btn:active {
+    opacity: .5;
+}
